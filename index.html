@@ -16,7 +16,7 @@
       img.height = window.innerHeight;
       app.stage.addChild(img);
 
-      let depthMap = new PIXI.Sprite.from("imageMap.jpg");
+      depthMap = new PIXI.Sprite.from("imageMap.jpg");
       depthMap.width = window.innerWidth;
       depthMap.height = window.innerHeight;
       app.stage.addChild(depthMap);
@@ -25,8 +25,8 @@
       app.stage.filters = [displacementFilter];
 
       window.onmousemove = function(e) {
-        displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) /20;
-        displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) /20;
+        displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) /40;
+        displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) /40;
       }
 
     </script>
