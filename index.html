@@ -17,8 +17,6 @@
       app.stage.addChild(img);
 
       depthMap = new PIXI.Sprite.from("imageMap.jpg");
-      depthMap.width = window.innerWidth;
-      depthMap.height = window.innerHeight;
       app.stage.addChild(depthMap);
 
       displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
