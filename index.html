@@ -22,7 +22,9 @@
       depthMap.height = window.innerHeight;
       app.stage.addChild(depthMap);
 
-      displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
+      let displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
+      displacementFilter.width = window.innerWidth;
+      displacementFilter.height = window.innerHeight;
       app.stage.filters = [displacementFilter];
 
       window.onmousemove = function(e) {
