@@ -17,7 +17,9 @@
       img.height = window.innerHeight;
       app.stage.addChild(img);
 
-      depthMap = new PIXI.Sprite.from("imageMap.jpg");
+      let depthMap = new PIXI.Sprite.from("imageMap.jpg");
+      depthMap.width = window.innerWidth;
+      depthMap.height = window.innerHeight;
       app.stage.addChild(depthMap);
 
       displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
@@ -29,7 +31,7 @@
       }
       
       document.addEventListener("click", function(){
-        window.location.href = "home.html";
+        window.location.href = "tuono.ca";
       });
       
     </script>
