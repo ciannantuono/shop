@@ -4,5 +4,5 @@ body {
 
 
 .pointer {
-cursor: url(cursor.png);
+cursor: url(cursor.png), pointer;
 }
